@@ -9,6 +9,14 @@ namespace WebApplication3
         {
             if (!IsPostBack)
             {
+                if (Application["DilekListesi"] == null)
+                {
+                    Application["DilekListesi"] = new Hashtable();
+                }
+
+            }
+            if (!IsPostBack)
+            {
                 if (Application["Duyurular"] != null)
                 {
                     Hashtable duyurular = (Hashtable)Application["Duyurular"];
@@ -27,8 +35,28 @@ namespace WebApplication3
                 }
             }
             }
-        
 
+        protected void btnGonder_Click(object sender, EventArgs e)
+        {
+            string dilek = txtGerıdonus.Text.Trim();
+            if (!string.IsNullOrEmpty(dilek))
+            {
+                Hashtable dilekListesi = (Hashtable)Application["DilekListesi"];
+                string anahtar = "dilek_" + DateTime.Now.Ticks;
+                dilekListesi[anahtar] = dilek;
+                Application["DilekListesi"] = dilekListesi;
+
+                lblDurum.Text = "Dilek/Şikayet başarıyla kaydedildi.";
+                lblDurum.ForeColor = System.Drawing.Color.Green;
+
+
+            }
+            else
+            {
+                lblDurum.Text = "Lütfen boş bir metin girmeyiniz!";
+                lblDurum.ForeColor = System.Drawing.Color.Red;
+            }
+        }
         // HTML içeriğini sade metne dönüştürmek için (opsiyonel)
         private string TemizleHTML(string html)
         {

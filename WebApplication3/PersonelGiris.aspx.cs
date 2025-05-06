@@ -24,6 +24,10 @@ namespace WebApplication3
                     personelTablosu.Add("FurT", "2412");
                     personelTablosu.Add("Mertcan", "7555");
                     personelTablosu.Add("Kaan", "2657");
+                    personelTablosu.Add("Neslihan", "4345");
+                    personelTablosu.Add("Semanur", "5361");
+                    personelTablosu.Add("Umut", "0909");
+                    personelTablosu.Add("Eren", "eren1126");
                 }
             }
         }

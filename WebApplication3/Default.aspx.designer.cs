@@ -24,13 +24,13 @@ namespace WebApplication1
         protected global::System.Web.UI.WebControls.TextBox txtDuyuru;
 
         /// <summary>
-        /// txtGeriDonus denetimi.
+        /// txtGerıdonus denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtGeriDonus;
+        protected global::System.Web.UI.WebControls.TextBox txtGerıdonus;
 
         /// <summary>
         /// lblDurum denetimi.
@@ -40,6 +40,15 @@ namespace WebApplication1
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblDurum;
+
+        /// <summary>
+        /// Label2 denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
         /// Label1 denetimi.
