@@ -1,0 +1,240 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\site.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\personelsayfas\u0131.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\personelsayfas\u0131.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\personelsayfas\u0131.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\personelsayfas\u0131.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\site.master.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\personelgiris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\personelgiris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\personelgiris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\personelgiris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|c:\\users\\mustafa\\.docker\\veriyap\u0131lar\u0131\\webapplication3\\webapplication3\\dileksikayet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\dileksikayet.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\dileksikayet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\dileksikayet.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\personelsayfas\u0131.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\personelsayfas\u0131.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\site.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\site.master.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\webapplication3\\duyuru.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{EE935995-33A8-4AB2-9A6C-5AA6D77C0359}|WebApplication3\\WebApplication3.csproj|solutionrelative:webapplication3\\duyuru.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PersonelSayfas\u0131.aspx",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelSayfas\u0131.aspx",
+              "RelativeDocumentMoniker": "WebApplication3\\PersonelSayfas\u0131.aspx",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelSayfas\u0131.aspx",
+              "RelativeToolTip": "WebApplication3\\PersonelSayfas\u0131.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T09:57:58.472Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PersonelSayfas\u0131.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelSayfas\u0131.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\PersonelSayfas\u0131.aspx.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelSayfas\u0131.aspx.cs",
+              "RelativeToolTip": "WebApplication3\\PersonelSayfas\u0131.aspx.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwDAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T19:38:43.717Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DilekSikayet.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\DilekSikayet.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\DilekSikayet.aspx.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\DilekSikayet.aspx.cs",
+              "RelativeToolTip": "WebApplication3\\DilekSikayet.aspx.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T09:58:59.74Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PersonelGiris.aspx",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelGiris.aspx",
+              "RelativeDocumentMoniker": "WebApplication3\\PersonelGiris.aspx",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelGiris.aspx",
+              "RelativeToolTip": "WebApplication3\\PersonelGiris.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T20:38:55.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "WebForm1.aspx",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\WebForm1.aspx",
+              "RelativeDocumentMoniker": "WebApplication3\\WebForm1.aspx",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\WebForm1.aspx",
+              "RelativeToolTip": "WebApplication3\\WebForm1.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T09:57:53.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Site.Master.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Site.Master.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Site.Master.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Site.Master.cs",
+              "RelativeToolTip": "WebApplication3\\Site.Master.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-05T09:41:32.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Site.Master",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Site.Master",
+              "RelativeDocumentMoniker": "WebApplication3\\Site.Master",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Site.Master",
+              "RelativeToolTip": "WebApplication3\\Site.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T19:52:10.934Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonelGiris.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelGiris.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\PersonelGiris.aspx.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelGiris.aspx.cs",
+              "RelativeToolTip": "WebApplication3\\PersonelGiris.aspx.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwD4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T21:57:26.318Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\WebForm1.aspx.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\WebForm1.aspx.cs",
+              "RelativeToolTip": "WebApplication3\\WebForm1.aspx.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T19:44:38.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DilekSikayet.aspx",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\DilekSikayet.aspx",
+              "RelativeDocumentMoniker": "WebApplication3\\DilekSikayet.aspx",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\DilekSikayet.aspx",
+              "RelativeToolTip": "WebApplication3\\DilekSikayet.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T09:57:43.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PersonelSayfas\u0131.aspx.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelSayfas\u0131.aspx.designer.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\PersonelSayfas\u0131.aspx.designer.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\PersonelSayfas\u0131.aspx.designer.cs",
+              "RelativeToolTip": "WebApplication3\\PersonelSayfas\u0131.aspx.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T19:59:03.815Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Site.Master.designer.cs",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Site.Master.designer.cs",
+              "RelativeDocumentMoniker": "WebApplication3\\Site.Master.designer.cs",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Site.Master.designer.cs",
+              "RelativeToolTip": "WebApplication3\\Site.Master.designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-04T20:13:20.226Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Duyuru.aspx",
+              "DocumentMoniker": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Duyuru.aspx",
+              "RelativeDocumentMoniker": "WebApplication3\\Duyuru.aspx",
+              "ToolTip": "C:\\Users\\Mustafa\\.docker\\VeriYap\u0131lar\u0131\\WebApplication3\\WebApplication3\\Duyuru.aspx",
+              "RelativeToolTip": "WebApplication3\\Duyuru.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-05-04T09:57:47.322Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
