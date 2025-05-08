@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.IO;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,12 +12,16 @@ namespace WebApplication3
         private static readonly Hashtable pharmacyStocks = Hashtable.Synchronized(new Hashtable()); // <eczaneAdı, Hashtable<ilacAdı, stok>>
         private static readonly Hashtable dutyPharmacies = Hashtable.Synchronized(new Hashtable()); // <eczaneAdı, bool>
         private const string PharmacistPassword = "eczane123";
+        private const string StockCsvFilePath = "C:\\Users\\Mustafa\\.docker\\VeriYapıları\\WebApplication3\\WebApplication3\\duty_pharmacies.csv";
+        private const string DutyCsvFilePath = "C:\\Users\\Mustafa\\.docker\\VeriYapıları\\WebApplication3\\WebApplication3\\pharmacy_stocks.csv";
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
                 UpdateDutyList();
+                LoadStocksFromCsv();
+                LoadDutyPharmaciesFromCsv();
             }
         }
 
@@ -25,12 +30,13 @@ namespace WebApplication3
             string name = txtPharmacyName.Text.Trim().ToLower();
             string pass = txtPassword.Text;
 
-            if (string.IsNullOrEmpty(name) || pass != PharmacistPassword)
+            if (name != "eren eczanesi" && name != "umut eczanesi" && name != "dilara eczanesi")
             {
-                litLoginStatus.Text = "<div class='alert alert-danger'>❌ Hatalı eczane adı veya şifre.</div>";
+                litLoginStatus.Text = "<div class='alert alert-danger'>❌ Sadece 'eren eczanesi', 'umut eczanesi' veya 'dilara eczanesi' giriş yapabilir.</div>";
                 pnlPharmacist.Visible = false;
                 return;
             }
+
 
             Session["CurrentPharmacy"] = name;
 
@@ -91,6 +97,7 @@ namespace WebApplication3
                     stockMap[medicine] = newStock;
 
                 litUpdateStatus.Text = $"<div class='alert alert-success'>✔ \"{medicine}\" stoğu: {newStock} adet.</div>";
+                SaveStocksToCsv();
             }
         }
 
@@ -150,6 +157,7 @@ namespace WebApplication3
                 }
             }
 
+            SaveDutyPharmaciesToCsv();
             UpdateDutyList();
         }
 
@@ -161,6 +169,82 @@ namespace WebApplication3
                 foreach (DictionaryEntry entry in dutyPharmacies)
                 {
                     bltDutyPharmacies.Items.Add(entry.Key.ToString());
+                }
+            }
+        }
+
+        private void LoadStocksFromCsv()
+        {
+            if (File.Exists(StockCsvFilePath))
+            {
+                var lines = File.ReadAllLines(StockCsvFilePath);
+                foreach (var line in lines)
+                {
+                    var parts = line.Split(',');
+                    string pharmacyName = parts[0].Trim();
+                    string medicineName = parts[1].Trim();
+                    int stockCount = int.Parse(parts[2].Trim());
+
+                    if (!pharmacyStocks.ContainsKey(pharmacyName))
+                        pharmacyStocks[pharmacyName] = Hashtable.Synchronized(new Hashtable());
+
+                    Hashtable stockMap = (Hashtable)pharmacyStocks[pharmacyName];
+                    stockMap[medicineName] = stockCount;
+                }
+            }
+        }
+
+        private void SaveStocksToCsv()
+        {
+            // CSV dosyasını yazmaya açıyoruz. Var olan dosyayı silmek istemediğimiz için ikinci parametreyi true yapıyoruz.
+            using (var writer = new StreamWriter(StockCsvFilePath, false))
+            {
+                lock (pharmacyStocks.SyncRoot)
+                {
+                    // Eczanelerin stoklarını yazıyoruz
+                    foreach (DictionaryEntry entry in pharmacyStocks)
+                    {
+                        string pharmacyName = (string)entry.Key;
+                        Hashtable stockMap = (Hashtable)entry.Value;
+
+                        // Stokları yazıyoruz
+                        foreach (DictionaryEntry stockEntry in stockMap)
+                        {
+                            string medicineName = (string)stockEntry.Key;
+                            int stockCount = (int)stockEntry.Value;
+
+                            // Eczane adı, ilaç adı ve stok miktarını CSV formatında yazıyoruz
+                            writer.WriteLine($"{pharmacyName},{medicineName},{stockCount}");
+                        }
+                    }
+                }
+            }
+        }
+
+
+        private void LoadDutyPharmaciesFromCsv()
+        {
+            if (File.Exists(DutyCsvFilePath))
+            {
+                var lines = File.ReadAllLines(DutyCsvFilePath);
+                foreach (var line in lines)
+                {
+                    string pharmacyName = line.Trim();
+                    dutyPharmacies[pharmacyName] = true;
+                }
+            }
+        }
+
+        private void SaveDutyPharmaciesToCsv()
+        {
+            using (var writer = new StreamWriter(DutyCsvFilePath, false)) 
+            {
+                lock (dutyPharmacies.SyncRoot)
+                {
+                    foreach (DictionaryEntry entry in dutyPharmacies)
+                    {
+                        writer.WriteLine(entry.Key.ToString());
+                    }
                 }
             }
         }

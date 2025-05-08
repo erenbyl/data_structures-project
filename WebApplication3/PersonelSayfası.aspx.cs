@@ -51,7 +51,7 @@ namespace WebApplication3
 
             if (!string.IsNullOrEmpty(baslik) && !string.IsNullOrEmpty(icerik))
             {
-                // Uygulama genelinde saklanan duyuru listesi
+                // 1. Bellekte tutulan Application-level duyuru tablosu
                 Hashtable duyurular = Application["Duyurular"] as Hashtable;
                 if (duyurular == null)
                     duyurular = new Hashtable();
@@ -59,18 +59,45 @@ namespace WebApplication3
                 string duyuruMetni = "📌 <b>" + baslik + "</b><br/>" + icerik;
                 string anahtar = "duyuru_" + DateTime.Now.Ticks;
 
+                // RAM'e yaz
                 duyurular[anahtar] = duyuruMetni;
                 Application["Duyurular"] = duyurular;
 
+                // 2. CSV dosyasına kalıcı olarak yaz
+                try
+                {
+                    string filePath = Server.MapPath("~/App_Data/duyurular.csv");
+                    string timeStamp = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    string line = $"\"{timeStamp}\",\"{baslik.Replace("\"", "\"\"")}\",\"{icerik.Replace("\"", "\"\"")}\"";
+
+                    // Dosya yoksa başlık yaz
+                    if (!System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.WriteAllText(filePath, "Tarih,Baslik,Icerik\n");
+                    }
+
+                    // Satırı ekle
+                    System.IO.File.AppendAllText(filePath, line + Environment.NewLine);
+                }
+                catch (Exception ex)
+                {
+                    lblDurum.Text = $"❌ Duyuru RAM'de kaydedildi ancak dosyaya yazılırken hata oluştu: {ex.Message}";
+                    lblDurum.ForeColor = System.Drawing.Color.OrangeRed;
+                    return;
+                }
+
                 lblDurum.Text = "✅ Duyuru başarıyla kaydedildi.";
                 lblDurum.ForeColor = System.Drawing.Color.Green;
+                txtBaslık.Text = "";
+                txtIcerik.Text = "";
             }
             else
             {
                 lblDurum.Text = "❗ Lütfen başlık ve içerik giriniz.";
                 lblDurum.ForeColor = System.Drawing.Color.Red;
             }
-        } }
+        }
+    }
 
     }
 

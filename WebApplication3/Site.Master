@@ -74,10 +74,10 @@
                 <img src="https://raw.githubusercontent.com/erenbyl/data_structures-project/main/logo.jpg" alt="Logo" />
                
                 <button type="button" onclick="location.href='WebForm1.aspx'">🏠 Ana Sayfa</button>
-                <button type="button" onclick="location.href='TopluTasimasi.aspx'">🚌 Toplu Taşıma</button>
+                <button type="button" onclick="location.href='TopluTasima.aspx'">🚌 Toplu Taşıma</button>
                 <button type="button" onclick="location.href='AcilDurum.aspx'">🚨 Acil Durumlar</button>
                 <button type="button" onclick="location.href='WebForm3.aspx'">💊 İlaç Sorgulama</button>
-                <button type="button" onclick="location.href='Kutuphane.aspx'">📚 Dijital Kütüphane</button>
+                <button type="button" onclick="location.href='umut.aspx'">📚 Dijital Kütüphane</button>
                 <button type="button" onclick="location.href='PersonelGiris.aspx'">👤 Personel Girişi</button>
             </div>
 
