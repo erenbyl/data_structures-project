@@ -1,0 +1,22 @@
+﻿namespace WebApplication1
+{
+    public partial class WebForm3
+    {
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.TextBox txtSearchMedicine;
+        protected global::System.Web.UI.WebControls.Button btnSearch;
+        protected global::System.Web.UI.WebControls.Literal litSearchResult;
+        protected global::System.Web.UI.WebControls.BulletedList bltDutyPharmacies;
+        protected global::System.Web.UI.WebControls.TextBox txtPharmacyName;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
+        protected global::System.Web.UI.WebControls.Literal litLoginStatus;
+        protected global::System.Web.UI.WebControls.Panel pnlPharmacist;
+        protected global::System.Web.UI.WebControls.TextBox txtMedicineName;
+        protected global::System.Web.UI.WebControls.TextBox txtStockCount;
+        protected global::System.Web.UI.WebControls.Button btnUpdateStock;
+        protected global::System.Web.UI.WebControls.Literal litUpdateStatus;
+        protected global::System.Web.UI.WebControls.Button btnToggleDuty;
+        protected global::System.Web.UI.WebControls.Literal litDutyStatus;
+    }
+}
