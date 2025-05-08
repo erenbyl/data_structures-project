@@ -15,13 +15,13 @@ namespace WebApplication3
     {
 
         /// <summary>
-        /// form1 denetimi.
+        /// lblKullanici denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik olarak oluşturulan alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Label lblKullanici;
 
         /// <summary>
         /// txtKullanici denetimi.
@@ -31,6 +31,15 @@ namespace WebApplication3
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtKullanici;
+
+        /// <summary>
+        /// lblSifre denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik olarak oluşturulan alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblSifre;
 
         /// <summary>
         /// txtSifre denetimi.

@@ -1,74 +1,79 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PersonelSayfası.aspx.cs" Inherits="WebApplication3.PersonelSayfası" %>
+﻿<%@ Page Title="Personel Sayfası" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PersonelSayfası.aspx.cs" Inherits="WebApplication3.PersonelSayfası" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         .main-container {
-            width: 95%;
-            margin: auto;
-            background-color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
         }
 
         .header {
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .header label {
             font-size: 18px;
             font-weight: bold;
-            font-style: italic;
-        }
-
-        .header input[type="text"] {
-            width: 200px;
-            padding: 5px;
+            color: #2c3e50;
+            margin-bottom: 25px;
         }
 
         .panel-container {
             display: flex;
-            justify-content: space-between;
+            flex-wrap: wrap;
             gap: 30px;
         }
 
         .panel {
             flex: 1;
-            background-color: #dcdcdc;
+            min-width: 300px;
+            background-color: #ffffff;
             padding: 20px;
-            border: 1px dashed #999;
-            border-radius: 5px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
         }
 
         .panel h3 {
             text-align: center;
-            margin-top: 0;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        .panel label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 6px;
+            color: #333;
         }
 
         .panel textarea,
         .panel input[type="text"] {
             width: 100%;
-            padding: 8px;
-            margin-top: 10px;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+            margin-bottom: 15px;
             box-sizing: border-box;
         }
 
-        .panel button,
-        .panel .btn {
-            display: block;
-            margin: 20px auto 0 auto;
-            padding: 10px 20px;
-            background-color: #c2d4e6;
+        .btn-primary {
+            background-color: #4a90e2;
+            color: white;
+            padding: 12px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-size: 1rem;
             cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100%;
         }
 
-        .panel button:hover {
-            background-color: #a2bddc;
+        .btn-primary:hover {
+            background-color: #3b7dd8;
+        }
+
+        .status-label {
+            font-weight: bold;
+            color: green;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
         }
     </style>
 </asp:Content>
@@ -77,35 +82,32 @@
     <div class="main-container">
         <!-- Personel Adı -->
         <div class="header">
-            <label for="txtPersonelAdi" style="font-weight:bold; font-style:italic;">Personel Adı:</label>
-<asp:Label ID="lblPersonelAdi" runat="server" Style="font-weight:normal; font-style:italic;" />
-
-
+            Personel Adı: <span style="font-style: italic; font-weight: normal;">
+                <asp:Label ID="lblPersonelAdi" runat="server" />
+            </span>
         </div>
 
-        <!-- Dilek-Şikayet ve Duyuru -->
+        <!-- Paneller -->
         <div class="panel-container">
-            <!-- Dilek-Şikayet -->
+            <!-- Dilek-Şikayet Paneli -->
             <div class="panel">
-                <h3>DİLEK-ŞİKAYET</h3>
-              
-                <asp:TextBox ID="txtSikayet" runat="server" TextMode="MultiLine" Rows="22" />
+                <h3>DİLEK - ŞİKAYET</h3>
+                <asp:TextBox ID="txtSikayet" runat="server" TextMode="MultiLine" Rows="20" />
             </div>
 
-            <!-- Duyuru -->
+            <!-- Duyuru Paneli -->
             <div class="panel">
                 <h3>DUYURU EKLEME SİSTEMİ</h3>
-                <label>Duyuru Başlığı</label>
-                <asp:TextBox ID="txtBaslık" runat="server" /><br />
-                <label>Duyuru İçeriği</label>
-                <asp:TextBox ID="txtIcerik" runat="server" TextMode="MultiLine" Rows="15" /><br />
-                 <asp:Label ID="lblDurum" runat="server" ForeColor="Green"></asp:Label><br /><br />
-               <asp:Button ID="btnDuyuruKaydet" runat="server" Text="Kaydet" OnClick="btnDuyuruKaydet_Click" />
+                <label for="txtBaslık">Duyuru Başlığı</label>
+                <asp:TextBox ID="txtBaslık" runat="server" />
 
-               
+                <label for="txtIcerik">Duyuru İçeriği</label>
+                <asp:TextBox ID="txtIcerik" runat="server" TextMode="MultiLine" Rows="10" />
 
+                <asp:Label ID="lblDurum" runat="server" CssClass="status-label" />
+
+                <asp:Button ID="btnDuyuruKaydet" runat="server" Text="Kaydet" CssClass="btn-primary" OnClick="btnDuyuruKaydet_Click" />
             </div>
         </div>
     </div>
 </asp:Content>
-

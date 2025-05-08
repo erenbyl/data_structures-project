@@ -1,86 +1,67 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="PersonelGiris.aspx.cs" Inherits="WebApplication3.PersonelGiris" %>
+﻿<%@ Page Title="Personel Giriş" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeBehind="PersonelGiris.aspx.cs" Inherits="WebApplication3.PersonelGiris" %>
 
-<!DOCTYPE html>
-<html lang="tr">
-<head runat="server">
-  <meta charset="utf-8" />
-  <title>Personel Girişi</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 0;
-      padding: 0;
-    }
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <style>
+        .login-container {
+            background-color: white;
+            max-width: 400px;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
 
-    .center-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
 
-    .login-panel {
-      background-color: #ccc;
-      padding: 40px;
-      border-radius: 8px;
-      width: 400px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
+        .login-container label {
+            font-weight: bold;
+            color: #333;
+            margin-top: 10px;
+            display: block;
+        }
 
-    .login-panel h2 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
 
-    .login-panel label {
-      font-weight: bold;
-      display: block;
-      margin-top: 15px;
-      margin-bottom: 5px;
-    }
+        .login-container input[type="submit"] {
+            background-color: #4a90e2;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            width: 100%;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-    .login-panel input[type="text"],
-    .login-panel input[type="password"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #aaa;
-      border-radius: 4px;
-    }
+        .login-container input[type="submit"]:hover {
+            background-color: #3b7dd8;
+        }
+    </style>
 
-    .login-panel input[type="submit"],
-    .login-panel button {
-      margin-top: 25px;
-      width: 100%;
-      padding: 10px;
-      background-color: #c2d4e6;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-weight: bold;
-    }
+    <div class="login-container">
+        <h2>👤 PERSONEL GİRİŞ</h2>
 
-    .login-panel input[type="submit"]:hover,
-    .login-panel button:hover {
-      background-color: #a2bddc;
-    }
-  </style>
-</head>
-<body>
-  <form id="form1" runat="server">
-    <div class="center-container">
-      <div class="login-panel">
-        <h2>PERSONEL GİRİŞ</h2>
+        <asp:Label ID="lblKullanici" runat="server" Text="Personel Adı:" AssociatedControlID="txtKullanici" />
+        <asp:TextBox ID="txtKullanici" runat="server" CssClass="form-control" />
 
-        <label for="txtKullanici">Personel Adı:</label>
-        <asp:TextBox ID="txtKullanici" runat="server" />
-
-        <label for="txtSifre">Şifre:</label>
-        <asp:TextBox ID="txtSifre" runat="server" TextMode="Password" />
+        <asp:Label ID="lblSifre" runat="server" Text="Şifre:" AssociatedControlID="txtSifre" />
+        <asp:TextBox ID="txtSifre" runat="server" TextMode="Password" CssClass="form-control" />
 
         <asp:Button ID="btnGiris" runat="server" Text="Giriş Yap" OnClick="btnGiris_Click" />
-      </div>
     </div>
-  </form>
-</body>
-</html>
+</asp:Content>

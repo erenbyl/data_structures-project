@@ -2,36 +2,108 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <style>
-        <style>
-        body { font-family: Arial, sans-serif; background: #f4f7fc; padding: 20px; }
-        .section { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #ddd; margin-bottom: 20px; }
-        h3 { color: #333; }
-        .btn-custom { width: 100%; max-width: 300px; padding: 12px; }
-   
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f7fc;
+        }
+
+        .container {
+            padding: 30px;
+        }
 
         .section {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 25px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .section:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
         }
 
         h3 {
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            font-weight: bold;
+            color: #2b2b2b;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-bottom: 20px;
         }
 
-        .form-inline input {
-            display: inline-block;
-            width: auto;
-            margin-right: 5px;
+        h4 {
+            color: #444;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .form-inline {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .form-control {
+            padding: 10px 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 250px;
+            transition: border 0.3s;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .btn-modern {
+            background: linear-gradient(135deg, #4e9af1, #007bff);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 600;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-modern:hover {
+            background: linear-gradient(135deg, #3c85e5, #0069d9);
+            transform: translateY(-2px);
         }
 
         .btn-custom {
-            padding: 10px 15px;
+            width: 100%;
+            max-width: 300px;
+            padding: 12px;
             font-size: 1rem;
+            border-radius: 8px;
+        }
+
+        .list-group {
+            padding-left: 20px;
+        }
+
+        .mb-2 {
+            margin-bottom: 10px;
+        }
+
+        .mt-3 {
+            margin-top: 20px;
+        }
+
+        .mt-4 {
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .form-inline {
+                flex-direction: column;
+                align-items: stretch;
+            }
         }
     </style>
 
@@ -40,7 +112,7 @@
             <h3>👥 Vatandaş - İlaç Arama</h3>
             <div class="form-inline">
                 <asp:TextBox ID="txtSearchMedicine" runat="server" CssClass="form-control" Placeholder="İlaç adı giriniz..."></asp:TextBox>
-                <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-outline-secondary" Text="Ara" OnClick="btnSearch_Click" />
+                <asp:Button ID="btnSearch" runat="server" CssClass="btn btn-modern" Text="🔍 Ara" OnClick="btnSearch_Click" />
             </div>
             <asp:Literal ID="litSearchResult" runat="server" />
         </div>
@@ -55,12 +127,12 @@
             <div class="form-inline">
                 <asp:TextBox ID="txtPharmacyName" runat="server" CssClass="form-control" Placeholder="Eczane adı giriniz"></asp:TextBox>
                 <asp:TextBox ID="txtPassword" runat="server" CssClass="form-control" TextMode="Password" Placeholder="Şifre giriniz"></asp:TextBox>
-                <asp:Button ID="btnLogin" runat="server" CssClass="btn btn-outline-secondary" Text="Giriş" OnClick="btnLogin_Click" />
+                <asp:Button ID="btnLogin" runat="server" CssClass="btn btn-modern" Text="🔑 Giriş" OnClick="btnLogin_Click" />
             </div>
             <asp:Literal ID="litLoginStatus" runat="server" />
 
             <asp:Panel ID="pnlPharmacist" runat="server" CssClass="mt-3" Visible="false">
-                <h4 class="mt-4">📦 Stok Güncelleme</h4>
+                <h4>📦 Stok Güncelleme</h4>
                 <asp:TextBox ID="txtMedicineName" runat="server" CssClass="form-control mb-2" Placeholder="İlaç adı"></asp:TextBox>
                 <asp:TextBox ID="txtStockCount" runat="server" CssClass="form-control mb-2" TextMode="Number" Placeholder="Stok (+ ekle, - çıkar)"></asp:TextBox>
                 <asp:Button ID="btnUpdateStock" runat="server" CssClass="btn btn-warning btn-custom" Text="Stok Güncelle" OnClick="btnUpdateStock_Click" />

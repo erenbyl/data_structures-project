@@ -8,7 +8,8 @@
     <style>
         body {
             margin: 0;
-            font-family: Arial;
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
         }
 
         .main-layout {
@@ -17,32 +18,49 @@
         }
 
         .left-sidebar {
-            width: 20%;
-            background-color: #d3d3d3;
+            width: 250px;
+            background-color: #fff;
+            border-right: 1px solid #e0e0e0;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
             padding: 20px;
-            text-align: center;
-        } 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .left-sidebar img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
         }
 
         .left-sidebar h2 {
-            font-style: italic;
-            margin: 10px 0;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: #333;
         }
 
         .left-sidebar button {
-            width: 90%;
-            padding: 20px;
-            margin: 10px 0;
-            font-weight: bold;
+            width: 100%;
+            padding: 12px 10px;
+            margin: 8px 0;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .left-sidebar button:hover {
+            background-color: #3b7dd8;
         }
 
         .main-content {
-            width: 80%;
-            padding: 20px;
+            flex: 1;
+            padding: 30px;
             overflow-y: auto;
         }
     </style>
@@ -51,16 +69,16 @@
 <body>
     <form runat="server">
         <div class="main-layout">
-            <!-- Ortak Sol Menü -->
+            <!-- Sol Menü -->
             <div class="left-sidebar">
-                <img src="Images/logo.png" alt="Logo" />
-                <h2>AKILLI<br />ŞEHİR<br />ULUDAĞ</h2>
-                <button type="button" onclick="location.href='WebForm1.aspx'">ANA SAYFA</button>
-                <button type="button" onclick="location.href='TopluTasimasi.aspx'">TOPLU TAŞIMA</button>
-                <button type="button" onclick="location.href='AcilDurum.aspx'">ACİL DURUMLAR</button>
-                <button type="button" onclick="location.href='WebForm3.aspx'">İLAÇ STOK SORGULAMA</button>
-                <button type="button" onclick="location.href='Kutuphane.aspx'">DİJİTAL KÜTÜPHANE</button>
-                <button type="button" onclick="location.href='PersonelGiris.aspx'">PERSONEL GİRİŞİ</button>
+                <img src="https://raw.githubusercontent.com/erenbyl/data_structures-project/main/logo.jpg" alt="Logo" />
+               
+                <button type="button" onclick="location.href='WebForm1.aspx'">🏠 Ana Sayfa</button>
+                <button type="button" onclick="location.href='TopluTasimasi.aspx'">🚌 Toplu Taşıma</button>
+                <button type="button" onclick="location.href='AcilDurum.aspx'">🚨 Acil Durumlar</button>
+                <button type="button" onclick="location.href='WebForm3.aspx'">💊 İlaç Sorgulama</button>
+                <button type="button" onclick="location.href='Kutuphane.aspx'">📚 Dijital Kütüphane</button>
+                <button type="button" onclick="location.href='PersonelGiris.aspx'">👤 Personel Girişi</button>
             </div>
 
             <!-- Sayfa İçeriği -->
