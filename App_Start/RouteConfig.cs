@@ -13,6 +13,14 @@ namespace WebApplication1
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+            // Ana sayfa URL'si boşsa => Kutuphane/umut.aspx'e yönlendir
+            routes.MapPageRoute(
+                routeName: "KutuphaneyeYonlendir",
+                routeUrl: "",
+                physicalFile: "~/Kutuphane/umut.aspx"
+            );
+
+            // Diğer MVC controller yönlendirmesi (mevcut yapı bozulmuyor)
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

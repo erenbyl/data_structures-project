@@ -81,11 +81,12 @@
       <a href="#" class="active">Toplu Taşıma</a>
       <a href="#">Ürün ve Hizmet Talepleri</a>
       <a href="#">Acil Durum Yönetimi</a>
-      <a href="#">Dijital Kütüphane</a>
-      <a href="WebForm3.aspx">Stok Yönetimi</a>
+      <a href="Kutuphane/umut.aspx">Dijital Kütüphane</a>
+      <a href="#">Stok Yönetimi</a>
       <a href="#">Toplanma Alanları</a>
       <span class="search-icon">&#128269;</span>
     </nav>
+
   </header>
 
 </body>
