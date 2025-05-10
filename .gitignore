@@ -1,0 +1,12 @@
+# Visual Studio için 
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.log
+*.tmp
+packages/
+*.nupkg
+*.cache
+*.Publish.xml
