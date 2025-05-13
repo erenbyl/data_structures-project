@@ -41,22 +41,48 @@ namespace WebApplication3
             string dilek = txtGerıdonus.Text.Trim();
             if (!string.IsNullOrEmpty(dilek))
             {
+                // 1. Bellekteki Hashtable'a ekle
                 Hashtable dilekListesi = (Hashtable)Application["DilekListesi"];
                 string anahtar = "dilek_" + DateTime.Now.Ticks;
                 dilekListesi[anahtar] = dilek;
                 Application["DilekListesi"] = dilekListesi;
 
-                lblDurum.Text = "Dilek/Şikayet başarıyla kaydedildi.";
-                lblDurum.ForeColor = System.Drawing.Color.Green;
+                // 2. Kalıcı olarak CSV dosyasına yaz
+                try
+                {
+                    // DOĞRU YOL: Server.MapPath kullan, sabit path kullanma
+                    string dosyaYolu = Server.MapPath("~/App_Data/dilekler.csv");
+                    string zamanDamgasi = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+                    string satir = $"\"{zamanDamgasi}\",\"{dilek.Replace("\"", "\"\"")}\"";
 
+                    if (!System.IO.File.Exists(dosyaYolu))
+                    {
+                        System.IO.File.WriteAllText(dosyaYolu, "Tarih,Mesaj\n");
+                    }
 
+                    System.IO.File.AppendAllText(dosyaYolu, satir + Environment.NewLine);
+
+                    // Başarılı mesaj
+                    lblDurum.Text = "✔ Dilek/Şikayet başarıyla kaydedildi.";
+                    lblDurum.ForeColor = System.Drawing.Color.Green;
+                    txtGerıdonus.Text = "";
+                }
+                catch (Exception ex)
+                {
+                    lblDurum.Text = $"❌ Dosyaya yazılırken hata oluştu: {ex.Message}";
+                    lblDurum.ForeColor = System.Drawing.Color.Red;
+                }
             }
             else
             {
-                lblDurum.Text = "Lütfen boş bir metin girmeyiniz!";
+                lblDurum.Text = "⚠ Lütfen boş bir metin girmeyiniz!";
                 lblDurum.ForeColor = System.Drawing.Color.Red;
             }
+
+            // Panelin açık kalmasını sağla
+            ClientScript.RegisterStartupScript(this.GetType(), "OpenPanel", "document.getElementById('rightPanel').style.display='block';", true);
         }
+
         // HTML içeriğini sade metne dönüştürmek için (opsiyonel)
         private string TemizleHTML(string html)
         {
