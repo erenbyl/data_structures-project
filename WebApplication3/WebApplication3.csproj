@@ -100,6 +100,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AcilDurum.aspx" />
     <Content Include="ChatGPT Image 10 Nis 2025 19_14_47.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
@@ -122,8 +123,52 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="images\kapaklar\1984.jpg" />
+    <Content Include="images\kapaklar\amok-kosucusu.jpg" />
+    <Content Include="images\kapaklar\anna-karenina.jpg" />
+    <Content Include="images\kapaklar\benim-adim-kirmizi.jpg" />
+    <Content Include="images\kapaklar\beyaz-dis.jpg" />
+    <Content Include="images\kapaklar\bilinmeyen-bir-kadinin-mektubu.jpg" />
+    <Content Include="images\kapaklar\bin-muhtesem-gunes.jpg" />
+    <Content Include="images\kapaklar\bulbulu-oldurmek.jpg" />
+    <Content Include="images\kapaklar\cavdar-tarlasinda-cocuklar.jpg" />
+    <Content Include="images\kapaklar\cehennem.jpg" />
+    <Content Include="images\kapaklar\da-vinci-sifresi.jpg" />
+    <Content Include="images\kapaklar\don-kisot.jpg" />
+    <Content Include="images\kapaklar\donusum.jpg" />
+    <Content Include="images\kapaklar\eylul.jpg" />
+    <Content Include="images\kapaklar\fareler-ve-i̇nsanlar.jpg" />
+    <Content Include="images\kapaklar\gazap-uzumleri.jpg" />
+    <Content Include="images\kapaklar\hayvan-ciftligi.jpg" />
+    <Content Include="images\kapaklar\i̇nce-mehmed.jpg" />
+    <Content Include="images\kapaklar\kar.jpg" />
+    <Content Include="images\kapaklar\karamazov-kardesler.jpg" />
+    <Content Include="images\kapaklar\kayip-sembol.jpg" />
+    <Content Include="images\kapaklar\kirmizi-pazartesi.jpg" />
+    <Content Include="images\kapaklar\kucuk-prens.jpg" />
+    <Content Include="images\kapaklar\kurk-mantolu-madonna.jpg" />
+    <Content Include="images\kapaklar\marti.jpg" />
+    <Content Include="images\kapaklar\melekler-ve-seytanlar.jpg" />
+    <Content Include="images\kapaklar\puslu-kitalar-atlasi.jpg" />
+    <Content Include="images\kapaklar\saatleri-ayarlama-enstitusu.jpg" />
+    <Content Include="images\kapaklar\sato.jpg" />
+    <Content Include="images\kapaklar\satranc.jpg" />
+    <Content Include="images\kapaklar\sefiller.jpg" />
+    <Content Include="images\kapaklar\seker-portakali.jpg" />
+    <Content Include="images\kapaklar\serenad.jpg" />
+    <Content Include="images\kapaklar\simyaci.jpg" />
+    <Content Include="images\kapaklar\suc-ve-ceza.jpg" />
+    <Content Include="images\kapaklar\tutunamayanlar.jpg" />
+    <Content Include="images\kapaklar\ucurtma-avcisi.jpg" />
+    <Content Include="images\kapaklar\yabanci.jpg" />
+    <Content Include="images\kapaklar\yeni-hayat.jpg" />
+    <Content Include="images\kapaklar\yeraltindan-notlar.jpg" />
+    <Content Include="images\kapaklar\yuzyillik-yalnizlik.jpg" />
+    <Content Include="kitaplar.aspx" />
+    <Content Include="kitap_detay.aspx" />
     <Content Include="PersonelGiris.aspx" />
     <Content Include="PersonelSayfası.aspx" />
+    <Content Include="rezervasyon.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -152,7 +197,14 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="TopluTasima.aspx" />
+    <Content Include="umut.aspx" />
     <Content Include="WebForm1.aspx" />
+    <Content Include="dilekler.csv" />
+    <Content Include="duyurular.csv" />
+    <Content Include="kitaplar.json" />
+    <Content Include="pharmacy_stocks.csv" />
+    <Content Include="duty_pharmacies.csv" />
     <Content Include="WebForm3.aspx" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
@@ -188,6 +240,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcilDurum.aspx.cs">
+      <DependentUpon>AcilDurum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AcilDurum.aspx.designer.cs">
+      <DependentUpon>AcilDurum.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
@@ -214,6 +273,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="kitaplar.aspx.cs">
+      <DependentUpon>kitaplar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kitaplar.aspx.designer.cs">
+      <DependentUpon>kitaplar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kitap_detay.aspx.cs">
+      <DependentUpon>kitap_detay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kitap_detay.aspx.designer.cs">
+      <DependentUpon>kitap_detay.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PersonelGiris.aspx.cs">
       <DependentUpon>PersonelGiris.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -229,6 +302,13 @@
       <DependentUpon>PersonelSayfası.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rezervasyon.aspx.cs">
+      <DependentUpon>rezervasyon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rezervasyon.aspx.designer.cs">
+      <DependentUpon>rezervasyon.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,6 +322,20 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TopluTasima.aspx.cs">
+      <DependentUpon>TopluTasima.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TopluTasima.aspx.designer.cs">
+      <DependentUpon>TopluTasima.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="umut.aspx.cs">
+      <DependentUpon>umut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="umut.aspx.designer.cs">
+      <DependentUpon>umut.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
